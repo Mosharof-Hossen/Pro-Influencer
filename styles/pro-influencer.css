@@ -1,0 +1,132 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Global property */
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --title-color: #3A3A3A;
+    --primary-text-color: #000000;
+    --secondary-text-color: #6C6C6C;
+    --btn-primary: #E02C6D;
+}
+
+.btn-primary{
+    background-color: var(--btn-primary);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+}
+
+header{
+    max-width: 1320px;
+    margin: 0px auto;
+}
+main{
+    max-width: 1320px;
+    margin: 0px auto;
+
+}
+
+/* **************** nav  ****************/
+
+.nav-title{
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 35px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+nav ul a{
+    text-decoration: none;
+    color: var(--title-color);
+    font-weight: 700;
+}
+nav img{
+    color: var(--title-color);
+    width: 36px;
+    margin-right: 25px;
+}
+nav ul li{
+    margin-right: 25px;
+    padding: 10px 0px;
+}
+
+/* **************** banner********* */
+.btn-img{
+    width: 15px;
+}
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.banner-content{
+    width: 600px;
+    color: var(--title-color);
+    margin-right: auto;
+}
+.banner-content h1, p, button{
+    margin: 10px ;
+
+}
+.banner-image{
+    background-image: url("../images/Circle\ design.svg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sponsors{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    margin: 30px 0px;
+    flex-wrap: wrap;
+
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent ,gray , transparent)1;
+}
+.sponsors img{
+    padding: 15px;
+}
+
+
+/* *********** Responsive Design */
+
+@media screen and (max-width:576px) {
+    nav, nav ul{
+        margin-bottom: 15px;
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin:20px;
+    }
+    .banner-content {
+        text-align: center;
+        width: 100%;
+    }
+    .banner-image{
+        width: 100%;
+    }
+
+}
