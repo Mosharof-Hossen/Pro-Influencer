@@ -14,6 +14,7 @@ body {
     --primary-text-color: #000000;
     --secondary-text-color: #6C6C6C;
     --btn-primary: #E02C6D;
+    --secondary-text-gray: #787885;
 }
 
 .btn-primary{
@@ -109,7 +110,73 @@ nav ul li{
     padding: 15px;
 }
 
+/* ************ Popular Collection */
+.collections{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0px;
+}
+.popular-collection h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--title-color);
+}
+.card{
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    
+}
+.card img{
+    width: 100%;
+}
+.card p{
+    margin: 0px;
+    color:var(--secondary-text-gray)
+}
+.checked{
+    color: orange;
+}
 
+/* ************ Featured Products at one place********* */
+.featured-products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+}
+.featured-content{
+    width: 700px;
+}
+.featured-content h3{
+    color: var(--title-color);
+    font-size: 30px;
+}
+.featured-content p{
+    color: var(--secondary-text-color);
+}
+.featured-content p,button{
+    margin: 15px 0px;
+}
+
+/* Footer */
+footer{
+    background-color: #0A0826;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+.social-icon img{
+    width: 30px;
+    padding: 5px;
+}
+.owner{
+    color: var(--btn-primary);
+}
 /* *********** Responsive Design */
 
 @media screen and (max-width:576px) {
@@ -117,15 +184,15 @@ nav ul li{
         margin-bottom: 15px;
         flex-direction: column;
     }
-    .banner{
+    .banner, .featured-products{
         flex-direction: column-reverse;
         margin:20px;
     }
-    .banner-content {
+    .banner-content ,.featured-content {
         text-align: center;
         width: 100%;
     }
-    .banner-image{
+    .banner-image , .featured-products img{
         width: 100%;
     }
 
